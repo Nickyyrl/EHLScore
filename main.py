@@ -268,9 +268,9 @@ def main():
             for i, (cluster_id, summary) in enumerate(cluster_summary.items()):
                 with cols[i]:
                     st.markdown(f"""
-                    <div style="background-color: black; padding: 10px; border-radius: 10px; text-align: left;">
-                        <h4 style="color: #007BFF; margin-bottom: 5px;">Profil {cluster_id}</h4>
-                        <ul style="list-style-type: none; padding-left: 0;">
+                <div style="background-color: black; padding: 20px; border-radius: 15px; text-align: left; width: 300px; margin: 10px;">
+                    <h4 style="color: #007BFF; margin-bottom: 10px; font-size: 18px;">Profil {cluster_id}</h4>
+                        <ul style="list-style-type: none; padding-left: 0; font-size: 16px;">
                             <li><b>Taille :</b> {summary['Taille du cluster']}</li>
                             <li><b>Population moyenne :</b> {summary['Population moyenne']:.2f}</li>
                             <li><b>Statut fréquent :</b> {summary['Statut le plus fréquent']}</li>
